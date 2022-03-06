@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap);
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -52,6 +53,75 @@ table {
   border-spacing: 0;
 }
 
+/* box-sizing reset */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  font: inherit;
+  font-family: "Roboto", sans-serif;
+}
+
+.main-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
 .navbar {
   background-color: aquamarine;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px 0;
+  justify-content: space-between;
+}
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.navbar ul li {
+  margin-left: 10px;
+}
+
+.home-view {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.home-view img {
+  width: 100%;
+}
+
+.home-view__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.home-view__info .heading1 {
+  padding: 20px 0;
+}
+.home-view__info .buttton-wrapper {
+  padding: 20px 0;
+}
+
+.heading1 {
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 8px 10px;
+}
+
+.button {
+  background-color: #aa9cd1;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 8px 10px;
+  text-decoration: none;
+  color: #ffffff;
 }
