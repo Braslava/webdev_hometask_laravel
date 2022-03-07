@@ -31,7 +31,7 @@
                         FAQ
                     </li>
                     <li>
-                        <a href="" class="button">Sing up</a>
+                        <a href="" class="button">Sign up</a>
                     </li>
                 </ul>
             </nav>

@@ -3,8 +3,8 @@
 @section('content')
 <div class="home-view">
     <div class="home-view__info">
-        <h1 class="heading1">Digital <span class="heading1-emphasis">Marketing</span></h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa, maiores doloribus. Quibusdam hic delectus perspiciatis! Iure, excepturi fuga corrupti repellendus sint obcaecati suscipit.</p>
+        <h1 class="heading1">Digital <span class="bright-text">Marketing</span></h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam provident delectus saepe ipsa ab autem velit, error, odit corrupti, officiis veniam ullam eius.</p>
         <div class="buttton-wrapper">
             <a href="#" class="button">Learn more</a>
         </div>

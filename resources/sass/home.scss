@@ -1,0 +1,46 @@
+@use "./base.scss";
+
+.home-view {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    padding: 50px 0;
+
+    img {
+        width: 100%;
+    }
+
+    @media (max-width: base.$layout-breakpoint-small) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.home-view__img {
+    align-self: center;
+}
+
+.home-view__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .heading1 {
+        padding: 10px 0 20px 0;
+
+        .bright-text {
+            font-weight: 500;
+            font-size: 28px;
+            display: block;
+            margin-top: 8px;
+            letter-spacing: 7px;
+        }
+    }
+
+    .buttton-wrapper {
+        padding: 50px 0 10px 0;
+    }
+
+    p {
+        line-height: 2;
+        color: base.$light-text;
+    }
+}
