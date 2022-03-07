@@ -16,29 +16,29 @@
                 <div class="logo">LOGO</div>
                 <ul>
                     <li>
-                        Home
+                        <a href="/">Home</a>
                     </li>
                     <li>
-                        Services
+                        <a href="/">Services</a>
                     </li>
                     <li>
-                        About
+                        <a href="/">About</a>
                     </li>
                     <li>
-                        Contact
+                        <a href="/">Contact</a>
                     </li>
                     <li>
-                        FAQ
+                        <a href="/">FAQ</a>
                     </li>
                     <li>
-                        <a href="" class="button">Sign up</a>
+                        <a href="/register" class="button">Sign up</a>
                     </li>
                 </ul>
             </nav>
         </header>
-        <section class="main">
+        <!-- <section class="main"> -->
             @yield('content')
-        </section>
+        <!-- </section> -->
         <footer class="footer"></footer>
     </div>
 </body>

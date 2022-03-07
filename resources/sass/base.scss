@@ -68,9 +68,15 @@ html {
         li {
             margin-left: 15px;
 
-            &:hover {
-                text-decoration: underline;
+            a {
+                color: $dark-text;
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                }
             }
+
+
         }
 
     }

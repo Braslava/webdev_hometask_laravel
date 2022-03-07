@@ -3,19 +3,87 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -25,8 +93,17 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -34,16 +111,20 @@ body {
   line-height: 1;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: "";
   content: none;
 }
@@ -58,8 +139,14 @@ html {
   box-sizing: border-box;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
+}
+
+button {
+  border: none;
 }
 
 html {
@@ -73,6 +160,9 @@ html {
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 10px;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 .heading1 {
@@ -95,6 +185,10 @@ html {
   color: #ffffff;
   text-transform: uppercase;
 }
+.button:hover, .button:focus {
+  background-color: #5854bf;
+  cursor: pointer;
+}
 
 .navbar {
   display: flex;
@@ -113,6 +207,13 @@ html {
 }
 .navbar ul li {
   margin-left: 15px;
+}
+.navbar ul li a {
+  color: #12072c;
+  text-decoration: none;
+}
+.navbar ul li a:hover {
+  text-decoration: underline;
 }
 .navbar .button {
   color: #12072c;
@@ -129,6 +230,9 @@ html {
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 10px;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 .heading1 {
@@ -152,6 +256,11 @@ html {
   text-transform: uppercase;
 }
 
+.button:hover, .button:focus {
+  background-color: #5854bf;
+  cursor: pointer;
+}
+
 .navbar {
   display: flex;
   flex-direction: row;
@@ -172,6 +281,15 @@ html {
 
 .navbar ul li {
   margin-left: 15px;
+}
+
+.navbar ul li a {
+  color: #12072c;
+  text-decoration: none;
+}
+
+.navbar ul li a:hover {
+  text-decoration: underline;
 }
 
 .navbar .button {
@@ -181,14 +299,15 @@ html {
 .home-view {
   display: grid;
   grid-template-columns: 2fr 3fr;
-  padding: 50px 0;
+  padding: 8vh 0;
 }
 .home-view img {
   width: 100%;
 }
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .home-view {
     grid-template-columns: 1fr;
+    padding: 3vh 0;
   }
 }
 
@@ -199,7 +318,6 @@ html {
 .home-view__info {
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 .home-view__info .heading1 {
   padding: 10px 0 20px 0;
@@ -217,4 +335,113 @@ html {
 .home-view__info p {
   line-height: 2;
   color: #929296;
+}
+
+html {
+  font: inherit;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #12072c;
+}
+
+.main-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 10px;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.heading1 {
+  font-size: 64px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 8px 10px;
+}
+
+.bright-text {
+  color: #f28c0f;
+}
+
+.button {
+  background-color: #a2a6f2;
+  border-radius: 15px;
+  display: inline-block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.button:hover, .button:focus {
+  background-color: #5854bf;
+  cursor: pointer;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px 0;
+  justify-content: space-between;
+}
+
+.navbar .logo {
+  font-weight: 700;
+}
+
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.navbar ul li {
+  margin-left: 15px;
+}
+
+.navbar ul li a {
+  color: #12072c;
+  text-decoration: none;
+}
+
+.navbar ul li a:hover {
+  text-decoration: underline;
+}
+
+.navbar .button {
+  color: #12072c;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px 10px 30px;
+}
+
+.registration-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  justify-items: center;
+  width: 100%;
+  max-width: 500px;
+  padding: 30px 10px;
+  border-radius: 10px;
+  font-size: 18px;
+  background-color: #dfdcf2;
+}
+.registration-form label {
+  display: block;
+}
+.registration-form input {
+  border: none;
+  padding: 10px;
+  margin-left: 8px;
+  border-radius: 10px;
+}
+.registration-form .button {
+  background-color: #f28c0f;
 }

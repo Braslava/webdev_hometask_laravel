@@ -1,0 +1,36 @@
+@use "./base.scss";
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 10px 30px;
+}
+
+.registration-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-items: center;
+    width: 100%;
+    max-width: 500px;
+    padding: 30px 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    background-color: base.$pale-blue;
+
+    label {
+        display: block;
+    }
+
+    input {
+        border: none;
+        padding: 10px;
+        margin-left: 8px;
+        border-radius: 10px;
+    }
+
+    .button {
+        background-color: base.$yellow;
+    }
+}
