@@ -3,7 +3,7 @@
 .home-view {
     display: grid;
     grid-template-columns: 2fr 3fr;
-    padding: 50px 0;
+    padding: 8vh 0;
 
     img {
         width: 100%;
@@ -11,6 +11,7 @@
 
     @media (max-width: base.$layout-breakpoint-small) {
         grid-template-columns: 1fr;
+        padding: 3vh 0;
     }
 }
 
@@ -21,7 +22,7 @@
 .home-view__info {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+   // justify-content: center;
 
     .heading1 {
         padding: 10px 0 20px 0;
