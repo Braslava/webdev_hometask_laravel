@@ -176,18 +176,33 @@ html {
   color: #f28c0f;
 }
 
-.button {
-  background-color: #a2a6f2;
+.button--outline, .button {
   border-radius: 15px;
   display: inline-block;
   padding: 10px 15px;
   text-decoration: none;
-  color: #ffffff;
   text-transform: uppercase;
+}
+.button--outline:hover, .button:hover, .button--outline:focus, .button:focus {
+  cursor: pointer;
+}
+
+.button {
+  background-color: #a2a6f2;
+  color: #ffffff;
 }
 .button:hover, .button:focus {
   background-color: #5854bf;
-  cursor: pointer;
+}
+
+.button--outline {
+  background-color: #ffffff;
+  outline: 2px solid #5854bf;
+  color: #5854bf;
+}
+.button--outline:hover, .button--outline:focus {
+  background-color: #5854bf;
+  color: #ffffff;
 }
 
 .navbar {
@@ -246,19 +261,36 @@ html {
   color: #f28c0f;
 }
 
-.button {
-  background-color: #a2a6f2;
+.button--outline, .button {
   border-radius: 15px;
   display: inline-block;
   padding: 10px 15px;
   text-decoration: none;
-  color: #ffffff;
   text-transform: uppercase;
+}
+
+.button--outline:hover, .button:hover, .button--outline:focus, .button:focus {
+  cursor: pointer;
+}
+
+.button {
+  background-color: #a2a6f2;
+  color: #ffffff;
 }
 
 .button:hover, .button:focus {
   background-color: #5854bf;
-  cursor: pointer;
+}
+
+.button--outline {
+  background-color: #ffffff;
+  outline: 2px solid #5854bf;
+  color: #5854bf;
+}
+
+.button--outline:hover, .button--outline:focus {
+  background-color: #5854bf;
+  color: #ffffff;
 }
 
 .navbar {
@@ -364,19 +396,36 @@ html {
   color: #f28c0f;
 }
 
-.button {
-  background-color: #a2a6f2;
+.button--outline, .button {
   border-radius: 15px;
   display: inline-block;
   padding: 10px 15px;
   text-decoration: none;
-  color: #ffffff;
   text-transform: uppercase;
+}
+
+.button--outline:hover, .button:hover, .button--outline:focus, .button:focus {
+  cursor: pointer;
+}
+
+.button {
+  background-color: #a2a6f2;
+  color: #ffffff;
 }
 
 .button:hover, .button:focus {
   background-color: #5854bf;
-  cursor: pointer;
+}
+
+.button--outline {
+  background-color: #ffffff;
+  outline: 2px solid #5854bf;
+  color: #5854bf;
+}
+
+.button--outline:hover, .button--outline:focus {
+  background-color: #5854bf;
+  color: #ffffff;
 }
 
 .navbar {
@@ -431,7 +480,7 @@ html {
   padding: 30px 10px;
   border-radius: 10px;
   font-size: 18px;
-  background-color: #dfdcf2;
+  background-color: #f28c0f;
 }
 .registration-form label {
   display: block;
@@ -441,7 +490,4 @@ html {
   padding: 10px;
   margin-left: 8px;
   border-radius: 10px;
-}
-.registration-form .button {
-  background-color: #f28c0f;
 }
