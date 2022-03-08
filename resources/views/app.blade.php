@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Marketing</title>
     <link href="/css/app.css" rel="stylesheet">
-    <!-- <script defer href="/js/app.js"></script> -->
+    <script defer src="/js/app.js"></script>
 </head>
 
 <body>
@@ -43,7 +43,7 @@
         <!-- </section> -->
         <footer class="footer"></footer>
     </div>
-    <script>
+    <!-- <script>
         const navigationMenu = document.querySelector("#primary-navigation");
         const navToggle = document.querySelector(".nav-toggle");
 
@@ -57,7 +57,7 @@
                 navToggle.setAttribute("aria-expanded", false)
             }
         });
-    </script>
+    </script> -->
 </body>
 
 </html>

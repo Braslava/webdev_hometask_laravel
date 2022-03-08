@@ -2162,7 +2162,9 @@ module.exports = {
   \*****************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-__webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js"); // require("./navigation");
+__webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
+
+__webpack_require__(/*! ./navigation */ "./resources/js/navigation.js");
 
 /***/ }),
 
@@ -2194,6 +2196,29 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     forceTLS: true
 // });
+
+/***/ }),
+
+/***/ "./resources/js/navigation.js":
+/*!************************************!*\
+  !*** ./resources/js/navigation.js ***!
+  \************************************/
+/***/ (() => {
+
+// hide/show hamburger menu
+var navigationMenu = document.querySelector("#primary-navigation");
+var navToggle = document.querySelector(".nav-toggle");
+navToggle.addEventListener("click", function () {
+  var navVisible = navigationMenu.getAttribute("data-visible");
+
+  if (navVisible === "false") {
+    navigationMenu.setAttribute("data-visible", true);
+    navToggle.setAttribute("aria-expanded", true);
+  } else {
+    navigationMenu.setAttribute("data-visible", false);
+    navToggle.setAttribute("aria-expanded", false);
+  }
+});
 
 /***/ }),
 
