@@ -165,11 +165,29 @@ html {
   grid-template-rows: auto 1fr auto;
 }
 
-.heading1 {
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+}
+
+.heading--main {
   font-size: 64px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.heading--section {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
   padding: 8px 10px;
+}
+
+.paragraph {
+  line-height: 2;
+  color: #929296;
 }
 
 .bright-text {
@@ -244,7 +262,7 @@ html {
     position: fixed;
     inset: 0 0 0 20%;
     background-color: #12072c;
-    opacity: 0.8;
+    opacity: 0.9;
     justify-content: center;
     z-index: 1000;
     transform: translateX(100%);
@@ -314,11 +332,29 @@ html {
   grid-template-rows: auto 1fr auto;
 }
 
-.heading1 {
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+}
+
+.heading--main {
   font-size: 64px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.heading--section {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
   padding: 8px 10px;
+}
+
+.paragraph {
+  line-height: 2;
+  color: #929296;
 }
 
 .bright-text {
@@ -403,7 +439,7 @@ html {
     position: fixed;
     inset: 0 0 0 20%;
     background-color: #12072c;
-    opacity: 0.8;
+    opacity: 0.9;
     justify-content: center;
     z-index: 1000;
     transform: translateX(100%);
@@ -484,10 +520,10 @@ html {
   display: flex;
   flex-direction: column;
 }
-.home-view__info .heading1 {
+.home-view__info .heading--main {
   padding: 10px 0 20px 0;
 }
-.home-view__info .heading1 .bright-text {
+.home-view__info .heading--main span {
   font-weight: 500;
   font-size: 28px;
   display: block;
@@ -496,10 +532,6 @@ html {
 }
 .home-view__info .buttton-wrapper {
   padding: 50px 0 10px 0;
-}
-.home-view__info p {
-  line-height: 2;
-  color: #929296;
 }
 
 html {
@@ -518,11 +550,29 @@ html {
   grid-template-rows: auto 1fr auto;
 }
 
-.heading1 {
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+}
+
+.heading--main {
   font-size: 64px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.heading--section {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
   padding: 8px 10px;
+}
+
+.paragraph {
+  line-height: 2;
+  color: #929296;
 }
 
 .bright-text {
@@ -607,7 +657,7 @@ html {
     position: fixed;
     inset: 0 0 0 20%;
     background-color: #12072c;
-    opacity: 0.8;
+    opacity: 0.9;
     justify-content: center;
     z-index: 1000;
     transform: translateX(100%);
@@ -671,6 +721,9 @@ html {
   align-items: center;
   margin: 10vh 10px 30px;
 }
+.form-container p {
+  text-align: center;
+}
 
 .registration-form {
   display: grid;
@@ -679,7 +732,7 @@ html {
   justify-items: center;
   width: 100%;
   max-width: 500px;
-  padding: 30px 10px;
+  padding: 35px 10px 30px;
   border-radius: 10px;
   font-size: 16px;
   background-color: #dfdcf2;

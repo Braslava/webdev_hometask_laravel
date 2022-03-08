@@ -23,11 +23,30 @@ html {
     grid-template-rows: auto 1fr auto;
 }
 
-.heading1 {
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+}
+
+.heading--main {
     font-size: 64px;
     font-weight: 700;
     text-transform: uppercase;
+}
+
+.heading--section {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    // text-transform: uppercase;
     padding: 8px 10px;
+}
+
+.paragraph {
+    line-height: 2;
+    color: $light-text;
 }
 
 .bright-text {
@@ -81,8 +100,6 @@ html {
 
 .navbar {
     display: flex;
-    // flex-direction: row;
-    // align-items: center;
 
     .logo {
         font-weight: 700;
@@ -115,7 +132,7 @@ html {
         position: fixed;
         inset: 0 0 0 20%;
         background-color: $dark;
-        opacity: 0.8;
+        opacity: 0.9;
         justify-content: center;
         z-index: 1000;
         transform: translateX(100%);

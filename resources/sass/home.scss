@@ -22,12 +22,12 @@
 .home-view__info {
     display: flex;
     flex-direction: column;
-   // justify-content: center;
+    // justify-content: center;
 
-    .heading1 {
+    .heading--main {
         padding: 10px 0 20px 0;
 
-        .bright-text {
+        span {
             font-weight: 500;
             font-size: 28px;
             display: block;
@@ -38,10 +38,5 @@
 
     .buttton-wrapper {
         padding: 50px 0 10px 0;
-    }
-
-    p {
-        line-height: 2;
-        color: base.$light-text;
     }
 }

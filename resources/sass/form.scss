@@ -5,6 +5,10 @@
     flex-direction: column;
     align-items: center;
     margin: 10vh 10px 30px;
+
+    p {
+        text-align: center;
+    }
 }
 
 .registration-form {
@@ -14,7 +18,7 @@
     justify-items: center;
     width: 100%;
     max-width: 500px;
-    padding: 30px 10px;
+    padding: 35px 10px 30px;
     border-radius: 10px;
     font-size: 16px;
     background-color: base.$pale-blue;
