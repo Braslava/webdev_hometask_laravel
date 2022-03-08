@@ -4,20 +4,20 @@ $blue: #a2a6f2;
 $yellow: #f28c0f;
 $bright-blue: #5854bf;
 $pale-blue: #dfdcf2;
-$dark-text: rgb(18, 7, 44);
+$dark: rgb(18, 7, 44);
 $light-text: rgb(146, 146, 150);
 
 html {
     font: inherit;
     font-family: "Roboto", sans-serif;
     font-size: 14px;
-    color: $dark-text;
+    color: $dark;
 }
 
 .main-container {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 15px;
     min-height: 100vh;
     display: grid;
     grid-template-rows: auto 1fr auto;
@@ -96,7 +96,7 @@ html {
         gap: 20px;
 
         a {
-            color: $dark-text;
+            color: $dark;
             text-decoration: none;
             &:hover {
                 text-decoration: underline;
@@ -108,14 +108,14 @@ html {
     }
 
     .button {
-        color: $dark-text;
+        color: $dark;
     }
 
     @media (max-width: $layout-breakpoint-small) {
         position: fixed;
         inset: 0 0 0 20%;
-        background-color: $yellow;
-        opacity: 0.9;
+        background-color: $dark;
+        opacity: 0.8;
         justify-content: center;
         z-index: 1000;
         transform: translateX(100%);
@@ -147,8 +147,8 @@ html {
         height: 2rem;
         background: url(/images/bars-solid.svg);
         background-repeat: no-repeat;
-        top: 2rem;
-        right: 2rem;
+        top: 1.5rem;
+        right: 1.5rem;
         z-index: 9999;
 
         &:hover {
@@ -162,7 +162,7 @@ html {
     }
 }
 
-// hiding accessibility contnet
+// hiding accessibility related contnet
 
 .visually-hidden:not(:focus):not(:active) {
     clip: rect(0 0 0 0);

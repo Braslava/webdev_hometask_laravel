@@ -159,7 +159,7 @@ html {
 .main-container {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 15px;
   min-height: 100vh;
   display: grid;
   grid-template-rows: auto 1fr auto;
@@ -243,8 +243,8 @@ html {
   .navbar {
     position: fixed;
     inset: 0 0 0 20%;
-    background-color: #f28c0f;
-    opacity: 0.9;
+    background-color: #12072c;
+    opacity: 0.8;
     justify-content: center;
     z-index: 1000;
     transform: translateX(100%);
@@ -274,8 +274,8 @@ html {
     height: 2rem;
     background: url(/images/bars-solid.svg);
     background-repeat: no-repeat;
-    top: 2rem;
-    right: 2rem;
+    top: 1.5rem;
+    right: 1.5rem;
     z-index: 9999;
   }
   .nav-toggle:hover {
@@ -308,7 +308,7 @@ html {
 .main-container {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 15px;
   min-height: 100vh;
   display: grid;
   grid-template-rows: auto 1fr auto;
@@ -402,8 +402,8 @@ html {
   .navbar {
     position: fixed;
     inset: 0 0 0 20%;
-    background-color: #f28c0f;
-    opacity: 0.9;
+    background-color: #12072c;
+    opacity: 0.8;
     justify-content: center;
     z-index: 1000;
     transform: translateX(100%);
@@ -436,8 +436,8 @@ html {
     height: 2rem;
     background: url(/images/bars-solid.svg);
     background-repeat: no-repeat;
-    top: 2rem;
-    right: 2rem;
+    top: 1.5rem;
+    right: 1.5rem;
     z-index: 9999;
   }
 
@@ -512,7 +512,7 @@ html {
 .main-container {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 15px;
   min-height: 100vh;
   display: grid;
   grid-template-rows: auto 1fr auto;
@@ -606,8 +606,8 @@ html {
   .navbar {
     position: fixed;
     inset: 0 0 0 20%;
-    background-color: #f28c0f;
-    opacity: 0.9;
+    background-color: #12072c;
+    opacity: 0.8;
     justify-content: center;
     z-index: 1000;
     transform: translateX(100%);
@@ -640,8 +640,8 @@ html {
     height: 2rem;
     background: url(/images/bars-solid.svg);
     background-repeat: no-repeat;
-    top: 2rem;
-    right: 2rem;
+    top: 1.5rem;
+    right: 1.5rem;
     z-index: 9999;
   }
 
