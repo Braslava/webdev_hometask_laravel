@@ -40,7 +40,8 @@ html {
     padding: 10px 15px;
     text-decoration: none;
     text-transform: uppercase;
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
         cursor: pointer;
     }
 }
@@ -48,9 +49,10 @@ html {
 .button {
     @extend %button;
     background-color: $blue;
-    color: $white;   
+    color: $white;
 
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
         background-color: $bright-blue;
     }
 }
@@ -60,19 +62,27 @@ html {
     background-color: $white;
     outline: 2px solid $bright-blue;
     color: $bright-blue;
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
         background-color: $bright-blue;
         color: $white;
     }
 }
 
+// header and navigation styles
 
-.navbar {
+.header {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 20px 0;
     justify-content: space-between;
+}
+
+.navbar {
+    display: flex;
+    // flex-direction: row;
+    // align-items: center;
 
     .logo {
         font-weight: 700;
@@ -82,25 +92,84 @@ html {
         display: flex;
         flex-direction: row;
         align-items: center;
+        padding: 20px 0;
+        gap: 20px;
 
-        li {
-            margin-left: 15px;
-
-            a {
-                color: $dark-text;
-                text-decoration: none;
-                &:hover {
-                    text-decoration: underline;
+        a {
+            color: $dark-text;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+                &.button {
+                    text-decoration: none;
                 }
             }
-
-
         }
-
     }
 
     .button {
         color: $dark-text;
     }
+
+    @media (max-width: $layout-breakpoint-small) {
+        position: fixed;
+        inset: 0 0 0 20%;
+        background-color: $yellow;
+        opacity: 0.9;
+        justify-content: center;
+        z-index: 1000;
+        transform: translateX(100%);
+        transition: transform 350ms ease-in;
+
+        &[data-visible="true"] {
+            transform: translateX(0%);
+        }
+
+        ul {
+            flex-direction: column;
+            justify-content: center;
+
+            a {
+                font-size: 16px;
+                color: $white;
+            }
+        }
+    }
 }
 
+.nav-toggle {
+    display: none;
+
+    @media (max-width: $layout-breakpoint-small) {
+        display: block;
+        position: absolute;
+        width: 2rem;
+        height: 2rem;
+        background: url(/images/bars-solid.svg);
+        background-repeat: no-repeat;
+        top: 2rem;
+        right: 2rem;
+        z-index: 9999;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &[aria-expanded="true"] {
+            background: url(/images/times-solid.svg);
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+// hiding accessibility contnet
+
+.visually-hidden:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
