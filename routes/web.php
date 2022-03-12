@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\RegistrationsController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,6 +17,5 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/register', function () {
-    return view('register');
-});
+Route::get('/register', [RegistrationsController::class, 'show']);
+//Route::post('/register', 'RegistrationsController@store');
