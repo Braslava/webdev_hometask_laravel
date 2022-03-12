@@ -7,7 +7,7 @@ use App\Models\Registration;
 
 class RegistrationsController extends Controller
 {
-    public function show()
+    public function create()
     {
         return view('register');
     }
