@@ -14,6 +14,12 @@ class RegistrationsController extends Controller
 
     public function store()
     {
-        return redirect('/');
+        $registration = new Registration;
+        $registration->name = request('name');
+        $registration->email = request('email');
+        $registration->save();
+        // error_log($registration);
+        // error_log(request('email'));
+        return redirect('/register')->with('message', 'Thanks for your registration!');
     }
 }
