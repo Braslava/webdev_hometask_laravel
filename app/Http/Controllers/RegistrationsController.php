@@ -20,6 +20,6 @@ class RegistrationsController extends Controller
         $registration->save();
         // error_log($registration);
         // error_log(request('email'));
-        return redirect('/register')->with('message', 'Thanks for your registration!');
+        return redirect('/register')->with('message', "Thanks for your registration! We will now send our newsletter to $registration->email.");
     }
 }
