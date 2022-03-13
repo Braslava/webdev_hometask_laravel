@@ -501,7 +501,7 @@ html {
 .home-view {
   display: grid;
   grid-template-columns: 2fr 3fr;
-  padding: 8vh 0;
+  padding: 10vh 0;
 }
 .home-view img {
   width: 100%;
@@ -511,10 +511,6 @@ html {
     grid-template-columns: 1fr;
     padding: 3vh 0;
   }
-}
-
-.home-view__img {
-  align-self: center;
 }
 
 .home-view__info {
@@ -533,6 +529,11 @@ html {
 }
 .home-view__info .buttton-wrapper {
   padding: 50px 0 10px 0;
+}
+@media (max-width: 700px) {
+  .home-view__info .buttton-wrapper {
+    padding: 30px 0 10px 0;
+  }
 }
 
 html {
