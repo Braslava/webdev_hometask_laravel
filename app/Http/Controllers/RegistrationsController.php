@@ -12,14 +12,25 @@ class RegistrationsController extends Controller
         return view('register');
     }
 
-    public function store()
+    /**
+     * Store a new blog post.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+
+    public function store(Request $request)
     {
+        // validate and store the data
+        $request->validate([
+            'name' => 'required',
+            'email' => 'required|email:rfc|unique:registrations',
+        ]);
         $registration = new Registration;
-        $registration->name = request('name');
-        $registration->email = request('email');
+        $registration->name = Request('name');
+        $registration->email = Request('email');
         $registration->save();
-        // error_log($registration);
-        // error_log(request('email'));
+
         return redirect('/register')->with('message', "Thanks for your registration! We will now send our newsletter to $registration->email.");
     }
 }
