@@ -753,3 +753,7 @@ html {
   font-size: 20px;
   padding: 10px 0;
 }
+
+.error-msg {
+  color: #dd0c0c;
+}
