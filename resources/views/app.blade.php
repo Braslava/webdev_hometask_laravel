@@ -21,16 +21,16 @@
                         <a href="/">Home</a>
                     </li>
                     <li>
-                        <a href="/">Services</a>
+                        <a href="/services">Services</a>
                     </li>
                     <li>
-                        <a href="/">About</a>
+                        <a href="/about">About</a>
                     </li>
                     <li>
-                        <a href="/">Contact</a>
+                        <a href="/contact">Contact</a>
                     </li>
                     <li>
-                        <a href="/">FAQ</a>
+                        <a href="/faq">FAQ</a>
                     </li>
                     <li>
                         <a href="/register" class="registration-btn button">Sign up</a>

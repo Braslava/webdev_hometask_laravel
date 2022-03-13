@@ -16,6 +16,17 @@ use App\Http\Controllers\RegistrationsController;
 Route::get('/', function () {
     return view('welcome');
 });
-
+Route::get('/services', function () {
+    return view('services');
+});
+Route::get('/about', function () {
+    return view('about');
+});
+Route::get('/contact', function () {
+    return view('contact');
+});
+Route::get('/faq', function () {
+    return view('faq');
+});
 Route::get('/register', [RegistrationsController::class, 'create']);
 Route::post('/register', [RegistrationsController::class, 'store']);

@@ -501,7 +501,7 @@ html {
 .home-view {
   display: grid;
   grid-template-columns: 2fr 3fr;
-  padding: 10vh 0;
+  padding: 8vh 0;
 }
 .home-view img {
   width: 100%;
