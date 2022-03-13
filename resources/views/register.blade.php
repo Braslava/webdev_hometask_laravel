@@ -19,9 +19,9 @@
     <form action="" method="POST" class="registration-form">
         @csrf
 
-        <label for="name">Name <input type="text" id="name" name="name" placeholder="name"></label>
+        <label for="name">Name <input type="text" id="name" name="name" placeholder="name" value="{{ old('name') }}"></label>
         <p class="error-msg">@error('name'){{ $message }}@enderror</p>
-        <label for="email">E-mail <input type="text" id="email" name="email" placeholder="email"></label>
+        <label for="email">E-mail <input type="text" id="email" name="email" placeholder="email" value="{{ old('email') }}"></label>
         <p class="error-msg">@error('email'){{ $message }}@enderror</p>
         <button type="submit" class="button--outline">Register</button>
     </form>
