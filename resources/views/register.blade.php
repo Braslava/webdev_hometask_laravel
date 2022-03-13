@@ -5,7 +5,7 @@
     <div class="flex-container">
         <h1 class="heading--section">Sign up for our weekly newsletter</h1>
         <p class="paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam provident delectus saepe ipsa ab autem velit, error, odit corrupti, officiis veniam ullam eius.</p>
-        <p class="success-msg">{{ session('message') }}</p>
+        <p class="success-msg bright-text">{{ session('message') }}</p>
     </div>
     <!-- @if ($errors->any())
     <div class="error-msg">
