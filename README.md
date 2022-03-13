@@ -5,6 +5,7 @@ This is an example landing page built using Laravel. The user can sign up for a 
 ## Dependencies 
 
 PHP 8.0.2 or later
+
 Node.js and npm 
 
 
@@ -13,9 +14,8 @@ Node.js and npm
 Please check the official guide on how to install Laravel. [Official Documentation](https://laravel.com/docs/9.x)
 
 Clone the repository
-git clone 
 
-`git@github.com:Braslava/webdev_hometask_laravel.git`
+`git clone git@github.com:Braslava/webdev_hometask_laravel.git`
 
 Switch to the repo folder 
 
