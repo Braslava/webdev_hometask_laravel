@@ -27,9 +27,3 @@
     </form>
 </div>
 @endsection
-
-<!-- 1. Sadaļā "Sign up" pievienot formu.
-	2. Forma satur 2 laukus (name un e-mail) un submit pogu.
-	3. Izmantojot "migration scripts" izveidot jaunu DB tabulu.
-	4. Pēc formas aizpildīšanas un nosūtīšanas, jāparādās paziņojumam.
-	5. Datiem jāsaglabājas DB tabulā. -->
