@@ -24,6 +24,8 @@ Please check the official guide on how to install Laravel. [Official Documentati
 
 `composer install`
 
+-   Create a .env file from the example env file
+
 -   Run the database migrations (**Set the database connection in .env before migrating**)
 
 `php artisan migrate`
