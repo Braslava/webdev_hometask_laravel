@@ -9,6 +9,10 @@
         "prod": "npm run production",
         "production": "mix --production"
     },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Braslava/webdev_hometask_laravel.git"
+      },
     "devDependencies": {
         "axios": "^0.25",
         "laravel-mix": "^6.0.6",
