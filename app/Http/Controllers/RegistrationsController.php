@@ -13,7 +13,7 @@ class RegistrationsController extends Controller
     }
 
     /**
-     * Store a new blog post.
+     * Store a new newsletter registration.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
