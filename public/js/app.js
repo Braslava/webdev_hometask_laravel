@@ -2218,7 +2218,13 @@ navToggle.addEventListener("click", function () {
     navigationMenu.setAttribute("data-visible", false);
     navToggle.setAttribute("aria-expanded", false);
   }
-});
+}); // navigationMenu.addEventListener("click", (event) => {
+//     const isOutsideNav = !!event.target.closest(".navbar");
+//     if (isOutsideNav === true) {
+//         navigationMenu.setAttribute("data-visible", false);
+//         navToggle.setAttribute("aria-expanded", false);
+//     }
+// });
 
 /***/ }),
 

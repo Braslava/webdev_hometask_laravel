@@ -231,90 +231,6 @@ html {
   color: #ffffff;
 }
 
-.header {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 20px 0;
-  justify-content: space-between;
-}
-
-.logo {
-  font-weight: 700;
-  font-size: 16px;
-}
-
-.navbar {
-  display: flex;
-}
-.navbar ul {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 20px 0;
-  gap: 20px;
-}
-.navbar ul a {
-  color: #12072c;
-  text-decoration: none;
-}
-.navbar ul a:hover {
-  text-decoration: underline;
-}
-.navbar ul a:hover.button {
-  text-decoration: none;
-}
-.navbar .button {
-  color: #12072c;
-}
-@media (max-width: 700px) {
-  .navbar {
-    position: fixed;
-    inset: 0 0 0 20%;
-    background-color: #12072c;
-    opacity: 0.9;
-    justify-content: center;
-    z-index: 1000;
-    transform: translateX(100%);
-    transition: transform 350ms ease-in;
-  }
-  .navbar[data-visible=true] {
-    transform: translateX(0%);
-  }
-  .navbar ul {
-    flex-direction: column;
-    justify-content: center;
-  }
-  .navbar ul a {
-    font-size: 16px;
-    color: #ffffff;
-  }
-}
-
-.nav-toggle {
-  display: none;
-}
-@media (max-width: 700px) {
-  .nav-toggle {
-    display: block;
-    position: absolute;
-    width: 2rem;
-    height: 2rem;
-    background: url(/images/bars-solid.svg);
-    background-repeat: no-repeat;
-    top: 1.5rem;
-    right: 1.5rem;
-    z-index: 9999;
-  }
-  .nav-toggle:hover {
-    cursor: pointer;
-  }
-  .nav-toggle[aria-expanded=true] {
-    background: url(/images/times-solid.svg);
-    background-repeat: no-repeat;
-  }
-}
-
 .visually-hidden:not(:focus):not(:active) {
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(50%);
@@ -411,6 +327,17 @@ html {
   color: #ffffff;
 }
 
+.visually-hidden:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 .header {
   display: flex;
   flex-direction: row;
@@ -427,7 +354,6 @@ html {
 .navbar {
   display: flex;
 }
-
 .navbar ul {
   display: flex;
   flex-direction: row;
@@ -435,28 +361,23 @@ html {
   padding: 20px 0;
   gap: 20px;
 }
-
 .navbar ul a {
   color: #12072c;
   text-decoration: none;
 }
-
 .navbar ul a:hover {
   text-decoration: underline;
 }
-
 .navbar ul a:hover.button {
   text-decoration: none;
 }
-
 .navbar .button {
   color: #12072c;
 }
-
 @media (max-width: 700px) {
   .navbar {
     position: fixed;
-    inset: 0 0 0 20%;
+    inset: 0;
     background-color: #12072c;
     opacity: 0.9;
     justify-content: center;
@@ -464,25 +385,22 @@ html {
     transform: translateX(100%);
     transition: transform 350ms ease-in;
   }
-
   .navbar[data-visible=true] {
     transform: translateX(0%);
   }
-
   .navbar ul {
     flex-direction: column;
     justify-content: center;
   }
-
   .navbar ul a {
     font-size: 16px;
     color: #ffffff;
   }
 }
+
 .nav-toggle {
   display: none;
 }
-
 @media (max-width: 700px) {
   .nav-toggle {
     display: block;
@@ -495,16 +413,100 @@ html {
     right: 1.5rem;
     z-index: 9999;
   }
-
   .nav-toggle:hover {
     cursor: pointer;
   }
-
   .nav-toggle[aria-expanded=true] {
     background: url(/images/times-solid.svg);
     background-repeat: no-repeat;
   }
 }
+
+html {
+  font: inherit;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #12072c;
+}
+
+.main-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 15px;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.heading--main {
+  font-size: 64px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.heading--section {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  padding: 8px 10px;
+}
+
+.heading--subsection {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.paragraph {
+  line-height: 2;
+  color: #929296;
+}
+
+.bright-text {
+  color: #f28c0f;
+}
+
+.margin--top-bottom {
+  margin: 30px 0 20px 0;
+}
+
+.button--outline, .button {
+  border-radius: 15px;
+  display: inline-block;
+  padding: 10px 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.button--outline:hover, .button:hover, .button--outline:focus, .button:focus {
+  cursor: pointer;
+}
+
+.button {
+  background-color: #a2a6f2;
+  color: #ffffff;
+}
+
+.button:hover, .button:focus {
+  background-color: #5854bf;
+}
+
+.button--outline {
+  background-color: #ffffff;
+  outline: 2px solid #5854bf;
+  color: #5854bf;
+}
+
+.button--outline:hover, .button--outline:focus {
+  background-color: #5854bf;
+  color: #ffffff;
+}
+
 .visually-hidden:not(:focus):not(:active) {
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(50%);
@@ -639,100 +641,6 @@ html {
   color: #ffffff;
 }
 
-.header {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 20px 0;
-  justify-content: space-between;
-}
-
-.logo {
-  font-weight: 700;
-  font-size: 16px;
-}
-
-.navbar {
-  display: flex;
-}
-
-.navbar ul {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 20px 0;
-  gap: 20px;
-}
-
-.navbar ul a {
-  color: #12072c;
-  text-decoration: none;
-}
-
-.navbar ul a:hover {
-  text-decoration: underline;
-}
-
-.navbar ul a:hover.button {
-  text-decoration: none;
-}
-
-.navbar .button {
-  color: #12072c;
-}
-
-@media (max-width: 700px) {
-  .navbar {
-    position: fixed;
-    inset: 0 0 0 20%;
-    background-color: #12072c;
-    opacity: 0.9;
-    justify-content: center;
-    z-index: 1000;
-    transform: translateX(100%);
-    transition: transform 350ms ease-in;
-  }
-
-  .navbar[data-visible=true] {
-    transform: translateX(0%);
-  }
-
-  .navbar ul {
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .navbar ul a {
-    font-size: 16px;
-    color: #ffffff;
-  }
-}
-.nav-toggle {
-  display: none;
-}
-
-@media (max-width: 700px) {
-  .nav-toggle {
-    display: block;
-    position: absolute;
-    width: 2rem;
-    height: 2rem;
-    background: url(/images/bars-solid.svg);
-    background-repeat: no-repeat;
-    top: 1.5rem;
-    right: 1.5rem;
-    z-index: 9999;
-  }
-
-  .nav-toggle:hover {
-    cursor: pointer;
-  }
-
-  .nav-toggle[aria-expanded=true] {
-    background: url(/images/times-solid.svg);
-    background-repeat: no-repeat;
-  }
-}
 .visually-hidden:not(:focus):not(:active) {
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(50%);
