@@ -185,7 +185,7 @@ html {
 }
 
 .heading--subsection {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 700;
 }
 
@@ -196,6 +196,10 @@ html {
 
 .bright-text {
   color: #f28c0f;
+}
+
+.margin--top-bottom {
+  margin: 30px 0 20px 0;
 }
 
 .button--outline, .button {
@@ -358,7 +362,7 @@ html {
 }
 
 .heading--subsection {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 700;
 }
 
@@ -369,6 +373,10 @@ html {
 
 .bright-text {
   color: #f28c0f;
+}
+
+.margin--top-bottom {
+  margin: 30px 0 20px 0;
 }
 
 .button--outline, .button {
@@ -582,7 +590,7 @@ html {
 }
 
 .heading--subsection {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 700;
 }
 
@@ -593,6 +601,10 @@ html {
 
 .bright-text {
   color: #f28c0f;
+}
+
+.margin--top-bottom {
+  margin: 30px 0 20px 0;
 }
 
 .button--outline, .button {
