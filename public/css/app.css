@@ -345,10 +345,23 @@ html {
   padding: 20px 0;
   justify-content: space-between;
 }
+.header a {
+  color: #12072c;
+  text-decoration: none;
+}
+.header a:hover {
+  text-decoration: underline;
+}
+.header a:hover.button {
+  text-decoration: none;
+}
 
 .logo {
   font-weight: 700;
   font-size: 16px;
+}
+.logo a:hover {
+  text-decoration: none;
 }
 
 .navbar {
@@ -360,16 +373,6 @@ html {
   align-items: center;
   padding: 20px 0;
   gap: 20px;
-}
-.navbar ul a {
-  color: #12072c;
-  text-decoration: none;
-}
-.navbar ul a:hover {
-  text-decoration: underline;
-}
-.navbar ul a:hover.button {
-  text-decoration: none;
 }
 .navbar .button {
   color: #12072c;

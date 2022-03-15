@@ -6,11 +6,26 @@
     align-items: center;
     padding: 20px 0;
     justify-content: space-between;
+
+    a {
+        color: base.$dark;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+            &.button {
+                text-decoration: none;
+            }
+        }
+    }
 }
 
 .logo {
     font-weight: 700;
     font-size: 16px;
+
+    a:hover {
+        text-decoration: none;
+    }
 }
 
 .navbar {
@@ -22,17 +37,6 @@
         align-items: center;
         padding: 20px 0;
         gap: 20px;
-
-        a {
-            color: base.$dark;
-            text-decoration: none;
-            &:hover {
-                text-decoration: underline;
-                &.button {
-                    text-decoration: none;
-                }
-            }
-        }
     }
 
     .button {

@@ -13,7 +13,7 @@
 <body>
     <div class="main-container">
         <header class="header">
-            <div class="logo">LOGO</div>
+            <div class="logo"><a href="/">LOGO</a></div>
             <button aria-controls="primary-navigation" aria-expanded="false" class="nav-toggle"><span class="visually-hidden">Menu</span></button>
             <nav class="navbar" data-visible="false" id="primary-navigation">
                 <ul>
