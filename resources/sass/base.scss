@@ -8,7 +8,6 @@ $dark: rgb(18, 7, 44);
 $light-text: rgb(146, 146, 150);
 
 html {
-    font: inherit;
     font-family: "Roboto", sans-serif;
     font-size: 14px;
     color: $dark;
@@ -70,6 +69,7 @@ html {
     &:hover,
     &:focus {
         cursor: pointer;
+        transition: all 0.5s;
     }
 }
 

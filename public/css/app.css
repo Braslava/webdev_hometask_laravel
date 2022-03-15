@@ -150,7 +150,6 @@ button {
 }
 
 html {
-  font: inherit;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   color: #12072c;
@@ -211,6 +210,7 @@ html {
 }
 .button--outline:hover, .button:hover, .button--outline:focus, .button:focus {
   cursor: pointer;
+  transition: all 0.5s;
 }
 
 .button {
@@ -243,7 +243,6 @@ html {
 }
 
 html {
-  font: inherit;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   color: #12072c;
@@ -305,6 +304,7 @@ html {
 
 .button--outline:hover, .button:hover, .button--outline:focus, .button:focus {
   cursor: pointer;
+  transition: all 0.5s;
 }
 
 .button {
@@ -423,7 +423,6 @@ html {
 }
 
 html {
-  font: inherit;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   color: #12072c;
@@ -485,6 +484,7 @@ html {
 
 .button--outline:hover, .button:hover, .button--outline:focus, .button:focus {
   cursor: pointer;
+  transition: all 0.5s;
 }
 
 .button {
@@ -557,7 +557,6 @@ html {
 }
 
 html {
-  font: inherit;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   color: #12072c;
@@ -619,6 +618,7 @@ html {
 
 .button--outline:hover, .button:hover, .button--outline:focus, .button:focus {
   cursor: pointer;
+  transition: all 0.5s;
 }
 
 .button {
